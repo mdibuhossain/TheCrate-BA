@@ -282,7 +282,8 @@ footer > div:first-child > div img {
   height: auto;
 }
 
-footer ul,p {
+footer ul,
+footer p {
   gap: 10px;
   display: flex;
   margin-top: 10px;
