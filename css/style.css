@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif; */
+  font-family: "Jost", sans-serif;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 17px;
+}
+
+header {
+  position: relative;
+  background-color: #ffdd21;
+}
+
+nav {
+  margin: auto;
+  display: flex;
+  z-index: inherit;
+  padding: 25px 25px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+  height: 35px;
+  width: auto;
+}
+
+nav ul {
+  gap: 5px;
+  display: flex;
+  font-size: 16px;
+}
+
+nav li {
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 35px;
+  font-size: 0.725rem;
+  letter-spacing: 0.08rem;
+  background-color: #5a3c20;
+}
+button:hover {
+  background-color: black;
+}
+
+.h1 {
+  font-size: 4.5rem;
+  font-weight: normal;
+  line-height: 5rem;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: calc(100vh + 50px);
+  background: right / cover no-repeat url("../assets/coffee-crates-hero-2.webp");
+}
+
+.hero_block {
+  padding-left: 45px;
+}
+
+.hero_block div {
+  margin: 20px 0;
+}
+
+.hero_block_list li {
+  padding: 5px 0;
+}
+
+.hero_block_list li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  padding-right: 20px;
+  display: inline-block;
+  background: center / contain no-repeat url("../assets/cup-of-drink.png");
+}
+
+.h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 3rem;
+}
+
+.second_block {
+  display: grid;
+  margin-top: 50px;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.second_block > div {
+  padding: 0 50px;
+}
+
+.second_block img {
+  width: 100%;
+}
+
+.second_block > div:nth-child(2) div {
+  padding: 15px 0;
+}
+
+.third_block {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_block_container {
+  gap: 70px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card_block {
+  width: 100%;
+  position: relative;
+  border: 1px solid black;
+}
+
+.card_block_badge {
+  left: 50%;
+  display: block;
+  padding: 8px 20px;
+  position: absolute;
+  border-radius: 100px;
+  background: white;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.card_block_btn {
+  left: 50%;
+  display: block;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.card_block img {
+  width: auto;
+  margin: auto;
+  height: 160px;
+  display: block;
+  padding-top: 50px;
+}
+
+.card_block ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 45px 60px 45px;
+}
+
+.card_block ul li:not(:last-child) {
+  width: 100%;
+  margin: auto;
+  padding: 6px 0px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.card_block_price {
+  top: 0;
+  right: 0;
+  z-index: 100;
+  position: absolute;
+  text-align: center;
+  padding: 10px 10px 0 0;
+}
+
+.card_block_svg {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.forth_block {
+  gap: 50px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.forth_block > div {
+  width: 100%;
+}
+
+.forth_block div:nth-child(2) {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.forth_block div:nth-child(2) li {
+  padding: 5px 0;
+}
+
+.forth_block div:nth-child(2) li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  padding-right: 20px;
+  display: inline-block;
+  background: center / contain no-repeat url("../assets/check-mark.png");
+}
+
+.forth_block img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.fifth_block {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.fifth_block_img {
+  background: center / cover no-repeat url("/assets/blog-post-4-700x450.webp");
+}
+
+.fifth_block_second_div {
+  background: #f7f1e7;
+  padding: 50px;
+}
+
+.fifth_block_second_div img {
+  width: 15px;
+  height: auto;
+}
+
+footer {
+  color: white;
+  background: #363636;
+  padding: 50px 50px 0px 50px;
+}
+
+footer > div:first-child {
+  gap: 50px;
+  display: grid;
+  padding-bottom: 50px;
+  grid-template-columns: 1.1fr 0.7fr 0.7fr 0.7fr 1fr;
+}
+
+footer > div:first-child > div img {
+  width: 20px;
+  height: auto;
+}
+
+footer ul,p {
+  gap: 10px;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  color: rgb(197, 194, 194);
+}
+
+hr {
+  border-color: rgba(128, 128, 128, 0.459);
+}
+
+.shop_tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.shop_tags li {
+  padding: 3px 15px;
+  color: rgb(197, 194, 194);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
